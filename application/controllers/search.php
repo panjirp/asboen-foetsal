@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class Search extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -27,32 +27,41 @@ class Home extends CI_Controller {
 	
 	public function index()
 	{
+		$post = $this->input->post();
+		$input = new stdClass();
+		$input->lapangan = $post['srcfieldname'];
+		$input->bookingdate = $post['bookingdate'];
+		$input->bookingtime = $post['bookingtime'];
+
 		$this->load->model('homemodel');
 		$time = $this->homemodel->getTime();
 		$field = $this->homemodel->getField();
-		// var_dump($field);
+
 		$data = array(
+			'field' => $field,
 			'time' => $time,
-			'field' => $field
+			'input' => $input
 		);
 		$this->load->library('template');
-		$this->template->loadx('default', 'home', $data);
+		$this->template->loadx('default', 'search', $data);
 	}
 
-	public function getallfield()
-	{
-		$this->load->model('homemodel');
-		$res = $this->homemodel->getField();
-		echo json_encode($res);
-	}
-
-	public function getfield2()
+	public function getFieldById()
 	{
 		$get = $this->input->get();
-		$id = $get['id_city'];
+		$id = $get['id'];
 		$this->load->model('homemodel');
-		$res = $this->homemodel->getField2($id);
-		echo json_encode($res);
+		$field = $this->homemodel->getFieldById($id);
+		echo json_encode($field);
+	}
+
+	public function getBookByDate()
+	{
+		$get = $this->input->get();
+		$booking_date = $get['date'];
+		$this->load->model('homemodel');
+		$book = $this->homemodel->getBook($booking_date);
+		echo json_encode($book);
 	}
 
 }

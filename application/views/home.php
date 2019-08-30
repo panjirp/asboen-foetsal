@@ -1,125 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Asboen Foetsal</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Asboen Futsal">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>styles/bootstrap4/bootstrap.min.css">
-<link href="<?php echo base_url(); ?>plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>plugins/OwlCarousel2-2.2.1/animate.css">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>styles/main_styles.css">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>styles/responsive.css">
-<link rel="shortcut icon" type="image/png" href="images/soccer-ball.png"/>
-</head>
-
-<body>
-
-<div class="super_container">
-	
-	<!-- Header -->
-
-	<header class="header">
-
-		<!-- Top Bar -->
-
-		<div class="top_bar">
-			<div class="container">
-				<div class="row">
-					<div class="col d-flex flex-row">
-						<div class="phone">{{contact number}}</div>
-						<div class="social">
-							<ul class="social_list">
-								<li class="social_list_item"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-								<li class="social_list_item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-								<li class="social_list_item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-								<li class="social_list_item"><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-								<li class="social_list_item"><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-								<li class="social_list_item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-							</ul>
-						</div>
-						<div class="user_box ml-auto">
-							<div class="user_box_login user_box_link"><a href="#">login</a></div>
-							<div class="user_box_register user_box_link"><a href="#">register</a></div>
-						</div>
-					</div>
-				</div>
-			</div>		
-		</div>
-
-		<!-- Main Navigation -->
-
-		<nav class="main_nav">
-			<div class="container">
-				<div class="row">
-					<div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
-						<div class="logo_container">
-							<div class="logo"><a href="#"><img src="images/soccer-ball-64px.png" alt="">asboen</a></div>
-						</div>
-						<div class="main_nav_container ml-auto">
-							<ul class="main_nav_list">
-								<li class="main_nav_item"><a href="#">home</a></li>
-								<li class="main_nav_item"><a href="about.html">about us</a></li>
-								<li class="main_nav_item"><a href="offers.html">offers</a></li>
-								<li class="main_nav_item"><a href="blog.html">news</a></li>
-								<li class="main_nav_item"><a href="contact.html">contact</a></li>
-							</ul>
-						</div>
-						<div class="content_search ml-lg-0 ml-auto">
-							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-							width="17px" height="17px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
-								<g>
-									<g>
-										<g>
-											<path class="mag_glass" fill="#FFFFFF" d="M78.438,216.78c0,57.906,22.55,112.343,63.493,153.287c40.945,40.944,95.383,63.494,153.287,63.494
-											s112.344-22.55,153.287-63.494C489.451,329.123,512,274.686,512,216.78c0-57.904-22.549-112.342-63.494-153.286
-											C407.563,22.549,353.124,0,295.219,0c-57.904,0-112.342,22.549-153.287,63.494C100.988,104.438,78.439,158.876,78.438,216.78z
-											M119.804,216.78c0-96.725,78.69-175.416,175.415-175.416s175.418,78.691,175.418,175.416
-											c0,96.725-78.691,175.416-175.416,175.416C198.495,392.195,119.804,313.505,119.804,216.78z"/>
-										</g>
-									</g>
-									<g>
-										<g>
-											<path class="mag_glass" fill="#FFFFFF" d="M6.057,505.942c4.038,4.039,9.332,6.058,14.625,6.058s10.587-2.019,14.625-6.058L171.268,369.98
-											c8.076-8.076,8.076-21.172,0-29.248c-8.076-8.078-21.172-8.078-29.249,0L6.057,476.693
-											C-2.019,484.77-2.019,497.865,6.057,505.942z"/>
-										</g>
-									</g>
-								</g>
-							</svg>
-						</div>
-
-						<form id="search_form" class="search_form bez_1">
-							<input type="search" class="search_content_input bez_1">
-						</form>
-
-						<div class="hamburger">
-							<i class="fa fa-bars trans_200"></i>
-						</div>
-					</div>
-				</div>
-			</div>	
-		</nav>
-
-	</header>
-
-	<div class="menu trans_500">
-		<div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
-			<div class="menu_close_container"><div class="menu_close"></div></div>
-			<div class="logo menu_logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
-			<ul>
-				<li class="menu_item"><a href="#">home</a></li>
-				<li class="menu_item"><a href="about.html">about us</a></li>
-				<li class="menu_item"><a href="offers.html">offers</a></li>
-				<li class="menu_item"><a href="blog.html">news</a></li>
-				<li class="menu_item"><a href="contact.html">contact</a></li>
-			</ul>
-		</div>
-	</div>
-
 	<!-- Home -->
 
 	<div class="home">
@@ -133,7 +11,7 @@
 				<!-- Slider Item -->
 				<div class="owl-item home_slider_item">
 					<!-- Image by https://unsplash.com/@anikindimitry -->
-					<div class="home_slider_background" style="background-image:url(images/futsal-wallpaper-background-hd.jpg)"></div>
+					<div class="home_slider_background" style="background-image:url(<?php echo base_url(); ?>images/futsal-wallpaper-background-hd.jpg)"></div>
 
 					<div class="home_slider_content text-center">
 						<div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
@@ -146,7 +24,7 @@
 
 				<!-- Slider Item -->
 				<div class="owl-item home_slider_item">
-					<div class="home_slider_background" style="background-image:url(images/futsal-wallpaper-background-hd2.jpg)"></div>
+					<div class="home_slider_background" style="background-image:url(<?php echo base_url(); ?>images/futsal-wallpaper-background-hd2.jpg)"></div>
 
 					<div class="home_slider_content text-center">
 						<div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
@@ -159,7 +37,7 @@
 
 				<!-- Slider Item -->
 				<div class="owl-item home_slider_item">
-					<div class="home_slider_background" style="background-image:url(images/futsal-field.jpg)"></div>
+					<div class="home_slider_background" style="background-image:url(<?php echo base_url(); ?>images/futsal-field.jpg)"></div>
 
 					<div class="home_slider_content text-center">
 						<div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
@@ -233,20 +111,34 @@
 			<div class="row fill_height">
 				<div class="col fill_height">
 					<div class="search_panel active">
-						<form action="#" id="search_form_1" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
+						<form action="<?php echo base_url(); ?>search" method="POST" id="search_form_1" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
 							<div class="search_item">
-								<div>location / field name</div>
-								<input type="text" class="destination search_input" required="required">
+								<div>Field name</div>
+								<select class="form-control" id="srcfieldname" name="srcfieldname">
+									<?php 
+										for($f=0; $f<count($field); $f++){
+											echo '<option value="'.$field[$f]->id.'">'.$field[$f]->name.'</option>';
+										}
+									?>
+								</select>
 							</div>
 							<div class="search_item">
 								<div>booking date</div>
-								<input type="text" class="check_in search_input" placeholder="YYYY-MM-DD">
+								<input type="date" class="check_in search_input" name="bookingdate" placeholder="YYYY-MM-DD">
 							</div>
+
 							<div class="search_item">
 								<div>time slot</div>
-								<input type="text" class="check_out search_input" placeholder="YYYY-MM-DD">
+								<!-- <input type="text" class="check_out search_input" name="bookingTime" placeholder="HH:mm"> -->
+								<select class="form-control" id="bookingtime" name="bookingtime">
+									<?php 
+										for($t=0; $t<count($time); $t++){
+											echo '<option value="'.$time[$t]->hour.'">'.$time[$t]->hour.'</option>';
+										}
+									?>
+								</select>
 							</div>
-							<button class="button search_button">search<span></span><span></span><span></span></button>
+							<button class="button search_button">book<span></span><span></span><span></span></button>
 						</form>
 					</div>
 				</div>
@@ -256,11 +148,11 @@
 
 	<!-- Intro -->
 	
-	<div class="intro">
+	<!-- <div class="intro">
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h2 class="intro_title text-center"><img src="images/rating.png" alt=""> Top Rated <img src="images/rating.png" alt=""></h2>
+					<h2 class="intro_title text-center"><img src="<?php echo base_url(); ?>images/rating.png" alt=""> Top Rated <img src="<?php echo base_url(); ?>images/rating.png" alt=""></h2>
 				</div>
 			</div>
 			<div class="row">
@@ -270,21 +162,24 @@
 					</div>
 				</div>
 			</div>
-			<div class="row intro_items">
+			<div class="row intro_items"> -->
 
 				<!-- Intro Item -->
 
+			<!-- <?php
+				for($top=0; $top<3; $top++){
+			?>
 				<div class="col-lg-4 intro_col">
 					<div class="intro_item">
-						<div class="intro_item_overlay"></div>
+						<div class="intro_item_overlay"></div> -->
 						<!-- Image by https://unsplash.com/@dnevozhai -->
-						<div class="intro_item_background" style="background-image:url(images/futsal-wallpaper-background-hd.jpg)"></div>
-						<div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
+						<!-- <div class="intro_item_background" style="background-image:url(<?php echo base_url(); ?>images/futsal-wallpaper-background-hd.jpg)"></div>
+						<div class="intro_item_content d-flex flex-column align-items-center justify-content-center"> -->
 							<!-- <div class="intro_date">May 25th - June 01st</div> -->
-							<div class="button intro_button"><div class="button_bcg"></div><a href="#">Book Now<span></span><span></span><span></span></a></div>
+							<!-- <div class="button intro_button"><div class="button_bcg"></div><a href="<?php echo base_url(); ?>book?id=<?php echo $field[$top]->id; ?>">Book Now<span></span><span></span><span></span></a></div>
 							<div class="intro_center text-center">
-								<h1>Liverpool Futsal</h1>
-								<div class="intro_price">Depok</div>
+								<h1><?php echo $field[$top]->name; ?></h1>
+								<div class="intro_price"><?php echo $field[$top]->address ?></div>
 								<div class="rating rating_4">
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
@@ -296,65 +191,17 @@
 						</div>
 					</div>
 				</div>
-
-				<!-- Intro Item -->
-
-				<div class="col-lg-4 intro_col">
-					<div class="intro_item">
-						<div class="intro_item_overlay"></div>
-						<!-- Image by https://unsplash.com/@hellolightbulb -->
-						<div class="intro_item_background" style="background-image:url(images/futsal-wallpaper-background-hd2.jpg)"></div>
-						<div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
-							<!-- <div class="intro_date">May 25th - June 01st</div> -->
-							<div class="button intro_button"><div class="button_bcg"></div><a href="#">Book Now<span></span><span></span><span></span></a></div>
-							<div class="intro_center text-center">
-								<h1>Arena Futsal</h1>
-								<div class="intro_price">Depok</div>
-								<div class="rating rating_4">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Intro Item -->
-
-				<div class="col-lg-4 intro_col">
-					<div class="intro_item">
-						<div class="intro_item_overlay"></div>
-						<!-- Image by https://unsplash.com/@willianjusten -->
-						<div class="intro_item_background" style="background-image:url(images/futsal-field.jpg)"></div>
-						<div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
-							<!-- <div class="intro_date">May 25th - June 01st</div> -->
-							<div class="button intro_button"><div class="button_bcg"></div><a href="#">Book Now<span></span><span></span><span></span></a></div>
-							<div class="intro_center text-center">
-								<h1>Golden Sport Center</h1>
-								<div class="intro_price">Depok</div>
-								<div class="rating rating_4">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+			<?php } ?>
+				
 
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<!-- Offers -->
 
 	<div class="offers">
-    <div class="cta_background" style="background-image:url(images/footballwp.jpg)"></div>
+    <div class="cta_background" style="background-image:url(<?php echo base_url(); ?>images/footballwp.jpg)"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col text-center">
@@ -370,7 +217,7 @@
 							<div class="col-lg-6">
 								<div class="offers_image_container">
 									<!-- Image by https://unsplash.com/@kensuarez -->
-									<div class="offers_image_background" style="background-image:url(images/piggy-bank.png)"></div>
+									<div class="offers_image_background" style="background-image:url(<?php echo base_url(); ?>images/piggy-bank.png)"></div>
 									<div class="offer_name"><a href="#">Member Discount</a></div>
 								</div>
 							</div>
@@ -390,7 +237,7 @@
 							<div class="col-lg-6">
 								<div class="offers_image_container">
 									<!-- Image by https://unsplash.com/@kensuarez -->
-									<div class="offers_image_background" style="background-image:url(images/piggy-bank.png)"></div>
+									<div class="offers_image_background" style="background-image:url(<?php echo base_url(); ?>images/piggy-bank.png)"></div>
 									<div class="offer_name"><a href="#">Member Discount</a></div>
 								</div>
 							</div>
@@ -410,7 +257,7 @@
 							<div class="col-lg-6">
 								<div class="offers_image_container">
 									<!-- Image by https://unsplash.com/@kensuarez -->
-									<div class="offers_image_background" style="background-image:url(images/piggy-bank.png)"></div>
+									<div class="offers_image_background" style="background-image:url(<?php echo base_url(); ?>images/piggy-bank.png)"></div>
 									<div class="offer_name"><a href="#">Member Discount</a></div>
 								</div>
 							</div>
@@ -430,7 +277,7 @@
 							<div class="col-lg-6">
 								<div class="offers_image_container">
 									<!-- Image by https://unsplash.com/@kensuarez -->
-									<div class="offers_image_background" style="background-image:url(images/piggy-bank.png)"></div>
+									<div class="offers_image_background" style="background-image:url(<?php echo base_url(); ?>images/piggy-bank.png)"></div>
 									<div class="offer_name"><a href="#">Member Discount</a></div>
 								</div>
 							</div>
@@ -447,96 +294,66 @@
 		</div>
 	</div>
 
+	<script>
+		var base_url = window.location.origin;
+
+		function getfield(id){
+				var srcfieldname = $("#srcfieldname");
+				srcfieldname.html('');
+			if(id != 'all'){
+					$.ajax({
+						type: "GET",
+						contentType: 'application/json',
+						dataType:'JSON',
+						responseType:'application/json',
+						url: base_url+"/asboen-foetsal/home/getfield2?id_city="+id,
+						cache: false,
+						success: function(response){
+							if(response.length == 0){
+								var optField = "<option disabled>NO FIELD</option>";
+								srcfieldname.append(optField);
+							}else{
+								for(i=0; i<response.length; i++){
+									var optField = "<option value="+response[i].id+">"+response[i].name+"</option>";
+									srcfieldname.append(optField);
+								}
+							}
+						},
+						error: function(jqXHR, textStatus, errorThrown) {
+							console.log(textStatus, errorThrown);
+							console.warn(jqXHR.responseText)
+						}
+					});
+			}else{
+				$.ajax({
+					type: "GET",
+					contentType: 'application/json',
+					dataType:'JSON',
+					responseType:'application/json',
+					url: base_url+"/asboen-foetsal/home/getallfield?",
+					cache: false,
+					success: function(response){
+						if(response.length == 0){
+							var optField = "<option disabled>NO FIELD</option>";
+							srcfieldname.append(optField);
+						}else{
+							var optField = "<option selected='true' value='all'>ALL FIELD</option>";
+							srcfieldname.append(optField);
+							for(i=0; i<response.length; i++){
+								var optField = "<option value="+response[i].id+">"+response[i].name+"</option>";
+								srcfieldname.append(optField);
+							}
+						}
+					},
+					error: function(jqXHR, textStatus, errorThrown) {
+						console.log(textStatus, errorThrown);
+						console.warn(jqXHR.responseText)
+					}
+				});
+			}	 
+		}
+	</script>
 	<!-- Testimonials -->
 
 	
 
-	<!-- Footer -->
-
-	<footer class="footer">
-		<div class="container">
-			<div class="row">
-
-				<!-- Footer Column -->
-				<div class="col-lg-6 footer_column">
-					<div class="footer_col">
-						<div class="footer_content footer_about">
-							<div class="logo_container footer_logo">
-								<div class="logo"><a href="#"><img src="images/soccer-ball-64px.png" alt="">asboen</a></div>
-							</div>
-							<p class="footer_about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							<ul class="footer_social_list">
-								<li class="footer_social_item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
-								<li class="footer_social_item"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-								<li class="footer_social_item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li class="footer_social_item"><a href="#"><i class="fa fa-dribbble"></i></a></li>
-								<li class="footer_social_item"><a href="#"><i class="fa fa-behance"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<!-- Footer Column -->
-				<div class="col-lg-6 footer_column">
-					<div class="footer_col">
-						<div class="footer_title">contact info</div>
-						<div class="footer_content footer_contact">
-							<ul class="contact_info_list">
-								<li class="contact_info_item d-flex flex-row">
-									<div><div class="contact_info_icon"><img src="images/phone-call.svg" alt=""></div></div>
-									<div class="contact_info_text">{{phone number}}</div>
-								</li>
-								<li class="contact_info_item d-flex flex-row">
-									<div><div class="contact_info_icon"><img src="images/message.svg" alt=""></div></div>
-									<div class="contact_info_text"><a href="mailto:contactme@gmail.com?Subject=Hello" target="_top">contactme@gmail.com</a></div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</footer>
-
-	<!-- Copyright -->
-
-	<div class="copyright">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 order-lg-1 order-2  ">
-					<div class="copyright_content d-flex flex-row align-items-center">
-						<div><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
-					</div>
-				</div>
-				<div class="col-lg-9 order-lg-2 order-1">
-					<div class="footer_nav_container d-flex flex-row align-items-center justify-content-lg-end">
-						<div class="footer_nav">
-							<ul class="footer_nav_list">
-								<li class="footer_nav_item"><a href="#">home</a></li>
-								<li class="footer_nav_item"><a href="about.html">about us</a></li>
-								<li class="footer_nav_item"><a href="offers.html">offers</a></li>
-								<li class="footer_nav_item"><a href="blog.html">news</a></li>
-								<li class="footer_nav_item"><a href="contact.html">contact</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-</div>
-
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="styles/bootstrap4/popper.js"></script>
-<script src="styles/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="plugins/easing/easing.js"></script>
-<script src="js/custom.js"></script>
-
-</body>
-
-</html>

@@ -328,7 +328,7 @@ section
 .top_bar
 {
 	width: 100%;
-	height: 36px;
+	height: 50px;
 	background: #350a4e;
 	-webkit-transition: all 400ms ease;
 	-moz-transition: all 400ms ease;
@@ -394,6 +394,16 @@ section
 .user_box_link a
 {
 	display: block;
+	font-size: 10px;
+	line-height: 36px;
+	font-weight: 600;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+.user_box_text
+{
+	display: inline-block;
+	/* display: block; */
 	font-size: 10px;
 	line-height: 36px;
 	font-weight: 600;
@@ -466,6 +476,48 @@ section
 	display: inline-block;
 	vertical-align: baseline;
 	margin-right: 9px;
+	-webkit-transform: translateY(2px);
+	-moz-transform: translateY(2px);
+	-ms-transform: translateY(2px);
+	-o-transform: translateY(2px);
+	transform: translateY(2px);
+}
+
+/*********************************
+3.2.1 Logo Top
+*********************************/
+
+.logo_top_container
+{
+	-webkit-transform: translateY(-6px);
+	-moz-transform: translateY(-6px);
+	-ms-transform: translateY(-6px);
+	-o-transform: translateY(-6px);
+	transform: translateY(-6px);
+}
+.header.scrolled .logo_top_container
+{
+	-webkit-transform: none;
+	-moz-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+}
+.logo_top a
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: #f4f4f8;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+.logo_top a img
+{
+	display: inline-block;
+	vertical-align: baseline;
+	margin-right: 9px;
+	margin-top: 9px;
+	width:20%;
 	-webkit-transform: translateY(2px);
 	-moz-transform: translateY(2px);
 	-ms-transform: translateY(2px);
@@ -744,12 +796,22 @@ section
 /*********************************
 4. Home
 *********************************/
-
+/* .page1
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background: #31124b;
+} */
 .home
 {
 	width: 100%;
-	height: 100vh;
+	height: 75vh;
 }
+
 
 
 /*********************************
@@ -1131,6 +1193,11 @@ section
 .search_button:hover
 {
 	opacity: 0.8;
+}
+.search_button:disabled
+{
+	opacity: 0.8;
+	/* background: #8732cd; */
 }
 
 /*********************************
