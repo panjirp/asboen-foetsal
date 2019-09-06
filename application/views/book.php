@@ -66,7 +66,7 @@
             <div class="col-xs-12">
               <a href="invoice-print.html" target="_blank" class="btn btn-default"><i class="fa fa-print"></i> Print</a>
               <button class="btn btn-success pull-right" onClick="window.location.href='http://localhost/asboen-foetsal/book/submitPayment?id=<?php echo $input->invoice_id;?>'"><i class="fa fa-credit-card"></i> Submit Payment</button>
-              <button class="btn btn-primary pull-right" style="margin-right: 5px;"><i class="fa fa-download"></i> Generate PDF</button>
+              <button class="btn btn-primary pull-right" onClick="window.location.href='http://localhost/asboen-foetsal/book/generatePDF?id=<?php echo $input->invoice_id;?>'" style="margin-right: 5px;"><i class="fa fa-download"></i> Generate PDF</button>
             </div>
           </div>
         </section><!-- /.content -->

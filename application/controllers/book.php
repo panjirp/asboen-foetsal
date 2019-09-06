@@ -158,4 +158,45 @@ class Book extends CI_Controller {
 		$result = $this->email->send();
 		echo $this->email->print_debugger();
 	}
+
+	public function generatePDF()
+	{
+		$this->load->library('pdfgenerator');
+		$get = $this->input->get();
+		$id = $get['id'];
+
+		$this->load->model('homemodel');
+		$book = $this->homemodel->getBookById($id);
+		$fieldname = $this->homemodel->getFieldById($book[0]->id_field);
+
+		if($book[0]->end_time > $book[0]->start_time){
+			$totalhour = $book[0]->end_time - $book[0]->start_time;
+		}else{
+			$totalhour = (24-$book[0]->start_time)+$book[0]->end_time;
+		}
+
+		$input = new stdClass();
+		$input->booking_date = $book[0]->booking_date;
+		$input->start_time = $book[0]->start_time;
+		$input->end_time = $book[0]->end_time;
+		$input->total_payment = $book[0]->total_payment;
+		$input->booking_name = $book[0]->booking_name;
+
+		$input->invoice_id = $id;
+		$input->fieldname = $fieldname[0]->name;
+		$input->priceperhour = $fieldname[0]->price;
+		$input->total_hour = $totalhour;
+
+		$bank = $this->homemodel->getBank();
+		$data = array(
+			'input' => $input,
+			'bank' => $bank
+		);
+		
+		$this->load->library('template');
+		// $html = $this->template->loadx('default', 'book', $data);
+		$html = $this->load->view('book', $data, true);
+	    
+	    $this->pdfgenerator->generate($html,'contoh');
+	}
 }
